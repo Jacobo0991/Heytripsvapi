@@ -1,0 +1,9 @@
+{
+    "CATEGORY":{
+        "MOUNTAINS": "Montañas",
+        "BEACHES": "Playas",
+        "TOWNS": "Pueblos",
+        "ROUTES": "Rutas",
+        "OTHERS": "Otros"
+    }
+}
