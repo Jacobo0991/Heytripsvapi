@@ -26,7 +26,7 @@ require('dotenv').config();
  * Module dependencies.
  */
 
-const database = require("./config/database.config");
+const database = require("/config/database.config");
 
 database.connect();
 let http = require('http');
