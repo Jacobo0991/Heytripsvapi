@@ -2,7 +2,7 @@
   "name": "heytripsvapi",
   "version": "1.0.0",
   "description": "Web Service API for HeyTripSV",
-  "main": "app.js",
+  "main": "www.js",
  "scripts": {
     "start": "node ./bin/www.js"
   },
