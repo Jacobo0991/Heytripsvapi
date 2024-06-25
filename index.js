@@ -29,8 +29,6 @@ require('dotenv').config();
 const database = require("../config/database.config");
 
 database.connect();
-
-let app = require('..');
 let http = require('http');
 
 /**
