@@ -21,6 +21,16 @@ app.use((error, req, res, next) => {
     return res.status(500).json({error: "Internal server error"});
 });
 
+require('dotenv').config();
+/**
+ * Module dependencies.
+ */
+
+const database = require("../config/database.config");
+
+database.connect();
+
+let app = require('..');
 let http = require('http');
 
 /**
