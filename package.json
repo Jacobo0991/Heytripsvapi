@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Web Service API for HeyTripSV",
   "main": "app.js",
-  "scripts": {
-    "dev": "nodemon ./bin/www"
+ "scripts": {
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
