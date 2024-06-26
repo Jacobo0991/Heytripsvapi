@@ -237,7 +237,7 @@ controller.sendCode = async (req, res, next) => {
 
             //Enviar código por correo
             const emailData = {
-                from: "foundhound09@gmail.com",
+                from: "heytripsv@gmail.com",
                 to: agency.email,
                 subject: `Password recovery`,
                 html: `
@@ -275,7 +275,7 @@ controller.sendCode = async (req, res, next) => {
 
         //Enviar código por correo
         const emailData = {
-            from: "foundhound09@gmail.com",
+            from: "heytripsv@gmail.com",
             to: user.email,
             subject: `Password recovery`,
             html: `

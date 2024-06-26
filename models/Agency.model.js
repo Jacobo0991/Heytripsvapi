@@ -119,7 +119,7 @@ agencySchema
         this.hashedCode = this.encryptPassword(code);
     });
 
-agencySchema.pre('deleteOne', async function(next) {
+agencySchema.pre('deleteOne', async (next) =>{
     try {
         await Post.deleteMany({agency: this._id});
         next();
