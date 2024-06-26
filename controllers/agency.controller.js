@@ -97,7 +97,7 @@ controller.reportAgency = async (req, res, next) => {
 
 controller.editOwn = async (req, res, next) => {
     try {
-        let {_id} = req.user;
+        let {_id} = req.user;   
         let {name, email, dui, description, number, instagram, facebook, password} = req.body;
         let image = req.file ? true : false;
         let user = await Agency.findOne({_id: _id});
