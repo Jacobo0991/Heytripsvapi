@@ -1,4 +1,5 @@
 const User = require('../models/User.model');
+const Post = require('../models/Post.model');
 const Agency = require('../models/Agency.model');
 const axios = require('axios')
 const cloudinary = require('cloudinary').v2
