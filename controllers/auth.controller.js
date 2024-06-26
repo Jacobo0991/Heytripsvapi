@@ -198,6 +198,8 @@ controller.whoamiagency = async (req, res, next) => {
     try {
         const { _id, name, email, dui, description, number, instagram, facebook, image } = req.user;
         return res.status(200).json({ _id, name, email, dui, description, number, instagram, facebook, image });
+        const posts = await Post.find({agency: _id}, undefined, {sort: [{createdAt: -1}]}).populate("agency", "name number");
+        return res.status(200).json({agency:{ _id, name, email, dui, description, number, instagram, facebook, image }, posts: posts});
     } catch (error) {
         next(error)
     }

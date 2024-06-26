@@ -15,6 +15,6 @@ router.patch("/report/:id", authentication, validateId, reportValidator, runVali
 router.patch("/undo-report/:id", authentication, validateId, runValidation, agencyController.undoReport);
 
 //Editar perfil
-router.post("/edit-profile/", authentication, checkRepeatedEmail, runValidation, agencyController.editOwn);
+router.post("/edit-profile/",upload.single("image"), authentication, checkRepeatedEmail, runValidation, agencyController.editOwn);
 
 module.exports = router;

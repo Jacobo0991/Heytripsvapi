@@ -98,9 +98,9 @@ controller.reportAgency = async (req, res, next) => {
 controller.editOwn = async (req, res, next) => {
     try {
         let {_id} = req.user;
-        let {name, email, dui, description, number, instagram, facebook} = req.body;
+        let {name, email, dui, description, number, instagram, facebook, password} = req.body;
         let image = req.file ? true : false;
-        const user = await Agency.findOne({_id: _id});
+        let user = await Agency.findOne({_id: _id});
         if(!user){
             return res.status(404).json({error: "User not found"})
         }
